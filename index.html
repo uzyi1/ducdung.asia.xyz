@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cá Nhân</title>
+    <style>
+        /* Thiết lập cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Khung chứa nội dung chính */
+        .profile-card {
+            background: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Phần ảnh bìa và ảnh đại diện */
+        .header-bg {
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+            height: 140px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            margin-top: -65px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        /* Nội dung thông tin */
+        .content {
+            padding: 20px 30px 30px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            text-align: left;
+            margin-bottom: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #2b5876;
+            margin-bottom: 10px;
+        }
+
+        /* Danh sách sở thích / kỹ năng */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Liên kết mạng xã hội */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #2b5876;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #4e4376;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Ảnh bìa màu gradient -->
+        <div class="header-bg"></div>
+
+        <!-- Ảnh đại diện (Thay đường link ảnh của bạn vào mục src) -->
+        <img src="https://via.placeholder.com/150" alt="Ảnh đại diện" class="avatar">
+
+        <div class="content">
+            <!-- Tên và mô tả ngắn -->
+            <h1>Nguyễn Văn A</h1>
+            <p class="subtitle">Học sinh / Sinh viên | Yêu thích Công nghệ & Sáng tạo</p>
+
+            <!-- Mục Giới thiệu -->
+            <div class="section">
+                <h2>Giới thiệu bản thân</h2>
+                <p>Xin chào! Mình là một người đam mê tìm tòi những điều mới mẻ, thích khám phá công nghệ, thiết kế và rèn luyện sức khỏe mỗi ngày. Đây là trang web cá nhân dùng để lưu trữ thông tin và kết nối với mọi người.</p>
+            </div>
+
+            <!-- Mục Thông tin cơ bản -->
+            <div class="section">
+                <h2>Thông tin cơ bản</h2>
+                <p><strong>Ngày sinh:</strong> 01/01/2008</p>
+                <p><strong>Nơi sống:</strong> Hà Nội, Việt Nam</p>
+                <p><strong>Email:</strong> emailcuaban@example.com</p>
+            </div>
+
+            <!-- Mục Sở thích / Kỹ năng -->
+            <div class="section">
+                <h2>Sở thích & Kỹ năng</h2>
+                <div class="tags">
+                    <span class="tag">Lập trình Web</span>
+                    <span class="tag">Thiết kế đồ họa</span>
+                    <span class="tag">Thể hình (Gym)</span>
+                    <span class="tag">Chơi game</span>
+                    <span class="tag">Nghe nhạc</span>
+                </div>
+            </div>
+
+            <!-- Các nút liên hệ -->
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="mailto:emailcuaban@example.com">Gửi Email</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
